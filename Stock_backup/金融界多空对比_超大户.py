@@ -1,4 +1,4 @@
-from 股票方法集 import *
+from Stock_backup.股票方法集 import *
 
 vstcode = [] #证券代码
 vstname = [] #证券简称

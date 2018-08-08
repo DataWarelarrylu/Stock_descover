@@ -1,13 +1,12 @@
-import tushare as ts
 import pandas as pd
-import json
-from sqlalchemy import create_engine
-import numpy as np
-from config import *
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+import tushare as ts
 from fake_useragent import UserAgent
+from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.support.ui import WebDriverWait
+
+from Stock_backup.config import *
+
 #伪装浏览器头部
 ua = UserAgent()
 dcap = dict(DesiredCapabilities.PHANTOMJS)

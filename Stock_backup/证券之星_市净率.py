@@ -1,9 +1,10 @@
-import requests
-import  demjson
-from xml.etree import ElementTree
-import json
 import re
-from 发送邮件 import *
+
+import  demjson
+import requests
+
+from Stock_backup.发送邮件 import *
+
 response = requests.get('http://q.ssajax.cn/webhandler/rank_market.ashx?style=1&_=1506652755160')
 d = response.text.replace('var varprice=','').replace(';','')
 dr = re.compile(r'<[^>]+>',re.S)
